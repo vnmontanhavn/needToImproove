@@ -1,0 +1,10 @@
+platform :ios, '9.3'
+use_frameworks!
+
+target 'mdbRemakeTests' do
+  
+pod 'Nimble-Snapshots'
+pod 'Nimble'
+pod 'Quick' # if you want to use it with Quick
+
+end

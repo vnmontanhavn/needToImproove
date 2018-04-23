@@ -1,0 +1,53 @@
+Incident Identifier: 31797C8F-4CD3-4F5E-AA84-83B9F980FAC0
+CrashReporter Key:   3938238b61f76c36f527d426df6d1e288b066a76
+Hardware Model:      iPhone10,4
+Process:             ItauPf [10649]
+Path:                /private/var/containers/Bundle/Application/87F41FAA-BA6F-4F7F-8EBD-92849ADAD0DE/ItauPf.app/ItauPf
+Identifier:          com.itau.enterprise
+Version:             27509 (6.4.2.1i)
+Code Type:           ARM-64 (Native)
+Role:                Foreground
+Parent Process:      launchd [1]
+Coalition:           com.itau.enterprise [2507]
+
+
+Date/Time:           2018-04-17 15:41:06.0229 -0300
+Launch Time:         2018-04-17 15:41:05.8103 -0300
+OS Version:          iPhone OS 11.3 (15E216)
+Baseband Version:    1.04.16
+Report Version:      104
+
+Exception Type:  EXC_CRASH (SIGABRT)
+Exception Codes: 0x0000000000000000, 0x0000000000000000
+Exception Note:  EXC_CORPSE_NOTIFY
+Termination Description: DYLD, Library not loaded: @rpath/AFNetworkActivityLogger.framework/AFNetworkActivityLogger | Referenced from: /var/containers/Bundle/Application/87F41FAA-BA6F-4F7F-8EBD-92849ADAD0DE/ItauPf.app/ItauPf | Reason: no suitable image found.  Did find: | /private/var/containers/Bundle/Application/87F41FAA-BA6F-4F7F-8EBD-92849ADAD0DE/ItauPf.app/Frameworks/AFNetworkActivityLogger.framework/AFNetworkActivityLogger: code signing blocked mmap() of '/private/var/containers/Bundle/Application/87F41FAA-BA6F-4F7F-8EBD-92849ADAD0DE/ItauPf.app/Frameworks/AFNetworkActivityLogger.framework/AFNetworkActivityLogger' | /private/var/containers/Bundle/Application/87F41FAA-BA6F-4F7F-8EBD-92849ADAD0DE/ItauPf.app/Frameworks/AFNetworkActivityLogger.framework/AFNetworkActivityLogger: code signing blocked mmap() of '/private/var/containers/Bundle/Application/87F41FAA-BA6F-4F7F-8EBD-92849ADAD0DE/ItauPf.app/Frameworks/AFNetworkActivityLogger.framework/AFNetworkActivityLogger' | /private/var/containers/Bundle/Application/87F41FAA-BA6F-4F7F-8EBD-92849
+Triggered by Thread:  0
+
+Filtered syslog:
+None found
+
+Thread 0 Crashed:
+0   dyld                          	0x000000010596e2f8 __abort_with_payload + 8
+1   dyld                          	0x000000010596dad0 abort_with_payload_wrapper_internal + 100
+2   dyld                          	0x000000010596dafc fcntl + 0
+3   dyld                          	0x0000000105944314 dyld::fastBindLazySymbol+ 17172 (ImageLoader**, unsigned long) + 0
+4   dyld                          	0x00000001059474cc dyld::_main+ 29900 (macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) + 7152
+5   dyld                          	0x000000010594121c _dyld_start + 68
+
+Thread 0 crashed with ARM Thread State (64-bit):
+    x0: 0x0000000000000006   x1: 0x0000000000000001   x2: 0x000000016b3e2930   x3: 0x00000000000000af
+    x4: 0x000000016b3e2530   x5: 0x0000000000000000   x6: 0x0000000000000000   x7: 0x0000000000000ea0
+    x8: 0x0000000000000020   x9: 0x0000000000000009  x10: 0x4631344637382f6e  x11: 0x2d463641422d4141
+   x12: 0x31344637382f6e6f  x13: 0x463641422d414146  x14: 0x45382d463746342d  x15: 0x39343832392d4442
+   x16: 0x0000000000000209  x17: 0x0000000000000001  x18: 0x0000000000000000  x19: 0x0000000000000000
+   x20: 0x000000016b3e2530  x21: 0x00000000000000af  x22: 0x000000016b3e2930  x23: 0x0000000000000001
+   x24: 0x0000000000000006  x25: 0x0000000104a1c000  x26: 0x000000010597e000  x27: 0x000000010597e458
+   x28: 0x0000000104a1c020   fp: 0x000000016b3e2500   lr: 0x000000010596dad0
+    sp: 0x000000016b3e24c0   pc: 0x000000010596e2f8 cpsr: 0x00000000
+
+Binary Images:
+0x104a1c000 - 0x1055b3fff ItauPf arm64  <5bdae30aa3e43f5a9cac3336ad16851b> /var/containers/Bundle/Application/87F41FAA-BA6F-4F7F-8EBD-92849ADAD0DE/ItauPf.app/ItauPf
+0x105940000 - 0x10597bfff dyld arm64  <06dc98224ae03573bf72c78810c81a78> /usr/lib/dyld
+
+EOF
+
