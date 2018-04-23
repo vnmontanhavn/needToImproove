@@ -1,0 +1,16 @@
+platform :ios, '9.3'
+inhibit_all_warnings!
+use_frameworks!
+
+target 'mdbStuff' do
+  
+
+  target "mdbStuffTests" do
+    inherit! :search_paths
+
+    pod 'Quick', '~> 1.2'
+    pod 'Nimble', '~> 7.0'
+    pod 'Nimble-Snapshots', '~> 6.3'
+
+  end
+end
